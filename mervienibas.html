@@ -8,13 +8,18 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <title>Informācijas daudzuma mērvienības</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style> body{ background-image: url(images/cipari.jpg)}
+               div{font-size:20px;
+               background-color:rgb(220,220,0)}
+               
+        </style>
     </head>
     <body>
         <form>
         <h1> Informācijas daudzuma mērvienības</h1>
-        <p>GB=</p>
-        <div>Izteikt migabaitos </div> <input></input> <p>MB</p>
-        <div>Izteikt mibibaitos</div><input></input><p>MiB</p>
+        <div><input type="text" name="skl"></input><span>GB=</span></div>
+        <div><span><input value="Izteikt migabaitos" type="button" onclick="rez1.value=skl.value*1000"></input> </span> <input name="rez1"></input> MB</div>
+        <div><span><input value="Izteikt mibibaitos" type="button" onclick="rez2.value=skl.value*1000000000000"></input></span><input name="rez2"></input>MiB</div>
         </form>
     </body>
 </html>
