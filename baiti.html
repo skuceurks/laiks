@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Aprēķināt cik daudz informācijas var lejuplādēt</div>
+        <div><input class="super"type="text" id="sekundes" onfocus="reset()"> sekundēs, ja interneta ātrums ir 25 Mbps</div>
+        <p></p>
+        <div>Atbilde</div>
+        <p></p>
+        <form>
+        <div><input class="super" name="rez" type="text">
+               <input onclick="rez.value=sekundes.value*3125*0.9765625"  value="KiB2" type="radio" name="KIb1" id="KiB" >
+               <label for="KiB">KiB</label>
+               <input onclick="rez.value=sekundes.value*3125" value="KB2" type="radio" name="KB1" id="KB" >
+               <label for="KB">KB</label></div>
+        </form>
+        <script>
+           function reset(){
+               document.getElementsByClassName()("super").value="none"
+               
+           } 
+            </script>
+    </body>
+</html>
